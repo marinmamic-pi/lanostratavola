@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <path d="M30,90 Q60,10 200,15 Q340,10 370,90" fill="none" stroke="#6B8E23" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M60,45 Q65,38 75,40" fill="none" stroke="#6B8E23" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M100,28 Q105,21 115,23" fill="none" stroke="#6B8E23" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M150,20 Q155,13 165,15" fill="none" stroke="#6B8E23" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M250,20 Q245,13 235,15" fill="none" stroke="#6B8E23" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M300,28 Q295,21 285,23" fill="none" stroke="#6B8E23" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M340,45 Q335,38 325,40" fill="none" stroke="#6B8E23" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="80" y1="90" x2="320" y2="90" stroke="#C04000" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="90" x2="100" y2="108" stroke="#C04000" stroke-width="2" stroke-linecap="round"/>
+  <line x1="300" y1="90" x2="300" y2="108" stroke="#C04000" stroke-width="2" stroke-linecap="round"/>
+</svg>

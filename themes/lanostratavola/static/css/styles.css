@@ -1,0 +1,392 @@
+/* ========================================
+   La Nostra Tavola — Brand Stylesheet
+   Colors: Terracotta #C04000, Ivory #F5E6D3,
+           Olive #6B8E23, Charcoal #2C2C2C
+   Fonts: Playfair Display (headings),
+          Inter (body)
+   ======================================== */
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Reset & Base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2C2C2C;
+  background-color: #F5E6D3;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  color: #C04000;
+  line-height: 1.2;
+}
+
+h1 { font-size: 3rem; margin-bottom: 0.5em; }
+h2 { font-size: 2rem; margin-bottom: 0.6em; }
+h3 { font-size: 1.5rem; margin-bottom: 0.7em; font-weight: 400; color: #2C2C2C; }
+h4 { font-size: 1.125rem; margin-bottom: 0.5em; }
+
+p { margin-bottom: 1.2em; }
+a { color: #C04000; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #8B2F00; }
+a:focus { outline: 2px solid #6B8E23; outline-offset: 2px; }
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section { padding: 64px 0; }
+.section-ivory { background-color: #F5E6D3; }
+.section-white { background-color: #FFFFFF; }
+.section-terracotta { background-color: #C04000; color: #F5E6D3; }
+
+/* Header / Navigation */
+.site-header {
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #6B8E23;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #C04000;
+}
+
+.logo-svg { height: 48px; width: auto; }
+
+.logo-text {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #C04000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2C2C2C;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  border-bottom-color: #C04000;
+  color: #C04000;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 96px 24px 64px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F5E6D3 100%);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+}
+
+.hero .tagline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #6B8E23;
+  margin-bottom: 8px;
+}
+
+.hero .subtitle {
+  font-size: 1.125rem;
+  color: #2C2C2C;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #C04000;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #A33400;
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #C04000;
+  border: 2px solid #C04000;
+}
+
+.btn-secondary:hover {
+  background-color: #C04000;
+  color: #FFFFFF;
+}
+
+/* Feature Cards */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.feature-card {
+  background: #FFFFFF;
+  padding: 32px 24px;
+  border-radius: 8px;
+  border-left: 4px solid #6B8E23;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.feature-card h3 {
+  color: #C04000;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  color: #2C2C2C;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about-text {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+/* Sign-up Form */
+.signup-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.signup-form input[type="email"] {
+  flex: 1 1 280px;
+  padding: 14px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: 2px solid #C04000;
+  border-radius: 4px;
+  background: #FFFFFF;
+  color: #2C2C2C;
+}
+
+.signup-form input[type="email"]:focus {
+  outline: none;
+  border-color: #6B8E23;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #2C2C2C;
+  color: #F5E6D3;
+  text-align: center;
+  padding: 48px 24px 32px;
+}
+
+.site-footer p {
+  font-size: 0.8125rem;
+  opacity: 0.8;
+}
+
+.site-footer a {
+  color: #F5E6D3;
+  text-decoration: underline;
+}
+
+/* Issue #1 content page */
+.issue-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E0D5C5;
+  padding: 48px 0 32px;
+  text-align: center;
+}
+
+.issue-meta {
+  font-size: 0.875rem;
+  color: #6B8E23;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.issue-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.issue-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.75rem;
+  color: #C04000;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #6B8E23;
+}
+
+.issue-content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.issue-content p {
+  margin-bottom: 1.2em;
+  line-height: 1.8;
+}
+
+.issue-content .recipe-card {
+  background: #FFFFFF;
+  border-left: 4px solid #6B8E23;
+  padding: 24px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.recipe-card h3 {
+  color: #C04000;
+  margin-top: 0;
+}
+
+.recipe-card ul, .recipe-card ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.recipe-card li { margin-bottom: 4px; }
+
+.pull-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #6B8E23;
+  padding: 24px 32px;
+  margin: 32px 0;
+  border-left: 3px solid #6B8E23;
+  line-height: 1.6;
+}
+
+.ingredients-list {
+  background: #F5E6D3;
+  padding: 24px;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.ingredients-list li {
+  list-style: none;
+  padding: 4px 0;
+  border-bottom: 1px dashed #D4C5B0;
+}
+
+.wine-pairing {
+  background: linear-gradient(135deg, #F5E6D3 0%, #FFFFFF 100%);
+  border: 1px solid #C04000;
+  padding: 24px;
+  margin: 24px 0;
+  border-radius: 8px;
+}
+
+.wine-pairing h4 {
+  color: #C04000;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.wine-pairing p { margin-bottom: 0; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  .hero h1 { font-size: 2.25rem; }
+  .site-header .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-links { gap: 16px; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .signup-form { flex-direction: column; }
+  .signup-form input[type="email"] { flex: none; }
+  .hero { padding: 64px 16px 48px; }
+}
+
+/* Divider */
+.section-divider {
+  width: 50%;
+  height: 1px;
+  background-color: #6B8E23;
+  margin: 0 auto;
+  border: none;
+}

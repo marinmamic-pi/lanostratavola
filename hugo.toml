@@ -1,0 +1,32 @@
+baseURL = "https://marinmamic-pi.github.io/lanostratavola/"
+languageCode = "en-us"
+title = "La Nostra Tavola"
+theme = "lanostratavola"
+
+[params]
+  brandTerracotta = "#C04000"
+  brandIvory = "#F5E6D3"
+  brandOlive = "#6B8E23"
+  brandCharcoal = "#2C2C2C"
+  tagline = "Come to the Table"
+
+[params.issue1]
+  title = "Orecchiette con Cime di Rapa"
+  subtitle = "The Ear-Shaped Pasta That Hears the Puglian Earth"
+  author = "Elena Novak"
+  issue = "Issue #1"
+  date = "June 2026"
+
+[menu]
+  [[menu.main]]
+    name = "The Table"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Issue #1"
+    url = "/issue/1/"
+    weight = 2
+  [[menu.main]]
+    name = "Join Us"
+    url = "/#signup"
+    weight = 3

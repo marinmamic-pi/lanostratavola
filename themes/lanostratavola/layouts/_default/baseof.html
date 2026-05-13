@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }} — La Nostra Tavola</title>
+  <meta name="description" content="{{ block "description" . }}A newsletter exploring Mediterranean food, culture, and the stories behind the table.{{ end }}">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/styles.css">
+  <meta property="og:title" content="{{ block "ogtitle" . }}{{ .Site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ block "ogdesc" . }}A newsletter exploring Mediterranean food, culture, and the stories behind the table.{{ end }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/images/og-preview.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo-link">
+        {{ partial "logo.html" . }}
+        <span class="logo-text">La Nostra Tavola</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ now.Format "2006" }} La Nostra Tavola. All rights reserved.</p>
+      <p>Come to the table. Leave fed.</p>
+    </div>
+  </footer>
+</body>
+</html>

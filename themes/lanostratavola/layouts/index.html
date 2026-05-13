@@ -1,0 +1,66 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<!-- Hero -->
+<section class="hero">
+  <p class="tagline">{{ .Site.Params.tagline }}</p>
+  <h1>{{ .Site.Title }}</h1>
+  <p class="subtitle">A newsletter exploring Mediterranean food, culture, and the stories behind the table. Every issue brings you a recipe, a story, and a connection to the places where good food lives.</p>
+  <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+    <a href="/issue/1/" class="btn btn-primary">Read Issue #1</a>
+    <a href="#signup" class="btn btn-secondary">Join the Table</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section section-white" id="about">
+  <div class="container about-text">
+    <h2 style="text-align:center;">Our Table</h2>
+    <p>La Nostra Tavola means "Our Table" — a table big enough for everyone. We believe food is more than sustenance: it's history, it's culture, it's the stories we pass down through generations.</p>
+    <p>Each issue explores one dish from the Mediterranean world — its origins, the hands that shaped it, the land it came from, and the wine that belongs beside it. We write for curious cooks, armchair travelers, and anyone who believes that a good meal comes with a good story.</p>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section section-ivory" id="features">
+  <div class="container">
+    <h2 style="text-align:center;">What You'll Find</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>🍝 A Recipe</h3>
+        <p>Detailed, tested recipes from across the Mediterranean, written to work in your kitchen. Each one comes with chef's tips and wine pairings.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📖 A Story</h3>
+        <p>Every dish has a history. We trace the etymology, the cultural roots, the grandmothers and farmers who keep traditions alive.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌿 A Connection</h3>
+        <p>We visit the places where these foods come from — the olive groves of Puglia, the markets of Crete, the vineyards of Andalusia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sign-up Section -->
+<section class="section section-terracotta" id="signup">
+  <div class="container" style="text-align:center;">
+    <h2 style="color:#F5E6D3;">Join Our Table</h2>
+    <p style="color:#F5E6D3; max-width:500px; margin:0 auto 32px; opacity:0.9;">Be the first to receive each issue — delivered to your inbox with stories, recipes, and wine pairings from across the Mediterranean.</p>
+    <form class="signup-form" action="#" method="post">
+      <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit" class="btn btn-secondary" style="border-color:#F5E6D3; color:#F5E6D3;">Subscribe</button>
+    </form>
+    <p style="color:#F5E6D3; font-size:0.8125rem; margin-top:16px; opacity:0.7;">No spam. Just good food. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- Latest Issue Preview -->
+<section class="section section-white">
+  <div class="container" style="text-align:center;">
+    <hr class="section-divider">
+    <h2 style="margin-top:48px;">Issue #1</h2>
+    <p style="max-width:600px; margin:0 auto 24px;">Orecchiette con Cime di Rapa: The little ears that hear the Puglian earth. Our inaugural issue explores this iconic dish from the heel of Italy.</p>
+    <a href="/issue/1/" class="btn btn-primary">Read the Issue →</a>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "description" }}{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Summary }}{{ end }}{{ end }}
+{{ define "ogtitle" }}{{ .Title }}{{ end }}
+{{ define "ogdesc" }}{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Summary }}{{ end }}{{ end }}
+{{ define "main" }}
+<article>
+  <header class="issue-header">
+    <div class="container">
+      <p class="issue-meta">{{ .Params.issue | default "La Nostra Tavola" }} · {{ .Params.date | default "" }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}<p style="font-size:1.125rem; color:#6B8E23; font-style:italic;">{{ . }}</p>{{ end }}
+      {{ with .Params.author }}<p style="font-size:0.875rem; margin-top:16px; color:#2C2C2C;">By {{ . }}</p>{{ end }}
+    </div>
+  </header>
+  <div class="section section-ivory">
+    <div class="container issue-content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

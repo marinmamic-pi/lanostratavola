@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <style>
+      .logo-text { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+      .logo-sub { font-family: 'Inter', sans-serif; font-weight: 300; }
+    </style>
+  </defs>
+  <path d="M20,85 Q60,15 200,20 Q340,15 380,85" fill="none" stroke="#2C2C2C" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="60" cy="42" rx="10" ry="5" fill="#2C2C2C" transform="rotate(-30,60,42)" opacity="0.6"/>
+  <ellipse cx="100" cy="28" rx="10" ry="5" fill="#2C2C2C" transform="rotate(-20,100,28)" opacity="0.7"/>
+  <ellipse cx="150" cy="22" rx="10" ry="5" fill="#2C2C2C" transform="rotate(-10,150,22)" opacity="0.5"/>
+  <ellipse cx="250" cy="22" rx="10" ry="5" fill="#2C2C2C" transform="rotate(10,250,22)" opacity="0.5"/>
+  <ellipse cx="300" cy="28" rx="10" ry="5" fill="#2C2C2C" transform="rotate(20,300,28)" opacity="0.7"/>
+  <ellipse cx="340" cy="42" rx="10" ry="5" fill="#2C2C2C" transform="rotate(30,340,42)" opacity="0.6"/>
+  <rect x="60" y="85" width="280" height="12" rx="2" fill="#2C2C2C"/>
+  <rect x="75" y="97" width="20" height="18" rx="2" fill="#2C2C2C" opacity="0.3"/>
+  <rect x="305" y="97" width="20" height="18" rx="2" fill="#2C2C2C" opacity="0.3"/>
+  <text x="200" y="62" text-anchor="middle" class="logo-text" font-size="22" fill="#2C2C2C">La Nostra Tavola</text>
+  <text x="200" y="78" text-anchor="middle" class="logo-sub" font-size="9" fill="#2C2C2C" letter-spacing="3">OUR TABLE</text>
+</svg>
