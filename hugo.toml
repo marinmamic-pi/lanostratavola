@@ -27,6 +27,10 @@ theme = "lanostratavola"
     url = "/issue/1/"
     weight = 2
   [[menu.main]]
+    name = "Issue #2"
+    url = "/issue/2/"
+    weight = 3
+  [[menu.main]]
     name = "Join Us"
     url = "/#signup"
-    weight = 3
+    weight = 4
