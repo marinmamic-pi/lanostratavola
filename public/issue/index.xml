@@ -1,3 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Issues on La Nostra Tavola</title><link>https://lanostratavola.com/issue/</link><description>Recent content in Issues on La Nostra Tavola</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://lanostratavola.com/issue/index.xml" rel="self" type="application/rss+xml"/><item><title>Orecchiette con Cime di Rapa: The Ear-Shaped Pasta That Hears the Puglian Earth</title><link>https://lanostratavola.com/issue/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lanostratavola.com/issue/1/</guid><description>The Ear of the Poor The name is disarmingly literal. In Italian dialect, orecchia means &amp;ldquo;ear,&amp;rdquo; and -etto is a diminutive suffix. Orecchiette: &amp;ldquo;little ears.&amp;rdquo; First recorded in the 13th century, the word appears in Apulian tax records listing pasta as a staple of the contadini — the peasant farmers who worked the latifundia estates of the feudal south.
-But etymology rarely stops at the literal. There&amp;rsquo;s a folk tradition in the villages of the Murgia plateau that says the ears were shaped deliberately — so the pasta could hear the prayers of the farmers who made it.</description></item><item><title>Primavera in Cucina — Spring Vegetables in Italian Tradition</title><link>https://lanostratavola.com/issue/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lanostratavola.com/issue/2/</guid><description>The First Green In Italy, spring doesn&amp;rsquo;t arrive on the calendar. It arrives on a plate.
-Walk into any trattoria in early April, and the menu tells you what season it is — not by what&amp;rsquo;s listed, but by what&amp;rsquo;s not. The hearty ribollita of winter has vanished. The porcini ragu is gone. In their place: pale green fave (broad beans), bright asparagi (asparagus), tender piselli (peas), and the elusive carciofi (artichokes) — each one a signal that the earth has turned.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Issues on La Nostra Tavola</title>
+    <link>https://lanostratavola.com/issue/</link>
+    <description>Recent content in Issues on La Nostra Tavola</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://lanostratavola.com/issue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orecchiette con Cime di Rapa: The Ear-Shaped Pasta That Hears the Puglian Earth</title>
+      <link>https://lanostratavola.com/issue/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lanostratavola.com/issue/1/</guid>
+      <description>The Ear of the Poor The name is disarmingly literal. In Italian dialect, orecchia means &amp;ldquo;ear,&amp;rdquo; and -etto is a diminutive suffix. Orecchiette: &amp;ldquo;little ears.&amp;rdquo; First recorded in the 13th century, the word appears in Apulian tax records listing pasta as a staple of the contadini — the peasant farmers who worked the latifundia estates of the feudal south.&#xA;But etymology rarely stops at the literal. There&amp;rsquo;s a folk tradition in the villages of the Murgia plateau that says the ears were shaped deliberately — so the pasta could hear the prayers of the farmers who made it.</description>
+    </item>
+    <item>
+      <title>Primavera in Cucina — Spring Vegetables in Italian Tradition</title>
+      <link>https://lanostratavola.com/issue/2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lanostratavola.com/issue/2/</guid>
+      <description>The First Green In Italy, spring doesn&amp;rsquo;t arrive on the calendar. It arrives on a plate.&#xA;Walk into any trattoria in early April, and the menu tells you what season it is — not by what&amp;rsquo;s listed, but by what&amp;rsquo;s not. The hearty ribollita of winter has vanished. The porcini ragu is gone. In their place: pale green fave (broad beans), bright asparagi (asparagus), tender piselli (peas), and the elusive carciofi (artichokes) — each one a signal that the earth has turned.</description>
+    </item>
+  </channel>
+</rss>
