@@ -46,15 +46,44 @@
   <div class="container" style="text-align:center;">
     <h2 style="color:#F5E6D3;">Join Our Table</h2>
     <p style="color:#F5E6D3; max-width:500px; margin:0 auto 32px; opacity:0.9;">Join our table. Weekly stories from the Mediterranean.</p>
-    <form class="signup-form" action="https://newsletters-feb-affair-campaign.trycloudflare.com/subscription/form" method="POST" target="listmonk-frame">
+    <form class="signup-form" action="https://subscribe.mare-e-terra.com/subscription/form" method="POST" target="listmonk-frame">
       <input type="hidden" name="l" value="5b2a50ac-631e-4872-ae83-23490dd9b6fe">
       <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
       <button type="submit" class="btn btn-secondary" style="border-color:#F5E6D3; color:#F5E6D3;">Subscribe</button>
     </form>
-    <iframe name="listmonk-frame" style="display:none;"></iframe>
+    <iframe name="listmonk-frame" id="listmonk-frame" style="display:none;"></iframe>
+    <div id="form-success" style="display:none; margin-top:1rem; color:#8fbc8f; font-weight:600;">✓ You're at the table! Welcome to La Nostra Tavola.</div>
+    <div id="form-error" style="display:none; margin-top:1rem; color:#e07050; font-weight:600;">Something went wrong. Please try again.</div>
     <p style="color:#F5E6D3; font-size:0.8125rem; margin-top:16px; opacity:0.7;">No spam. Just good food. Unsubscribe anytime.</p>
   </div>
 </section>
+<script>
+(function() {
+  var form = document.querySelector('.signup-form');
+  var frame = document.getElementById('listmonk-frame');
+  var success = document.getElementById('form-success');
+  var error = document.getElementById('form-error');
+  form.addEventListener('submit', function() {
+    form.querySelector('button').disabled = true;
+    form.querySelector('button').textContent = 'Subscribing…';
+    frame.onload = function() {
+      try {
+        var body = frame.contentDocument.body;
+        if (body.textContent.indexOf('success') > -1 || body.textContent.indexOf('Subscribed') > -1) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          form.style.display = 'none';
+          error.style.display = 'block';
+        }
+      } catch(e) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      }
+    };
+  });
+})();
+</script>
 
 <!-- Latest Issue Preview -->
 <section class="section section-white">
